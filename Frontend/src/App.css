@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.left, .right {
+  flex: 1;
+  height: 100%;
+  border-radius: 0.7rem;
+  padding: 1rem;
+}
+
+.left {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  background-color: whitesmoke;
+}
+
+.code {
+  font-size: 1.2rem;
+}
+
+.review {
+  margin-top: auto;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.review:hover {
+  background-color: #ddd;
+}
+.left.code,.code.pre,.code.pre code{
+  height: 100%;
+  width: 100%;
+}
